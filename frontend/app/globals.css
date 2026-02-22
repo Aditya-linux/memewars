@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Solar Fleet (Default/Light) */
+  --bg-color: #F0F4F8;
+  --surface-color: #FFFFFF;
+  --text-main: #0F172A;
+  --text-on-bg: #0F172A;
+  --border-color: #0F172A;
+  --shadow-color: #0F172A;
+
+  /* Accents */
+  --accent-primary: #3B82F6;
+  --accent-secondary: #EAB308;
+  --accent-tertiary: #64748B;
+
+  --text-on-surface: #0F172A;
+  /* Dark text on Light Surface */
+}
+
+/* Red Planet (Dark) - Manual Toggle */
+.dark:root {
+  --bg-color: #2C1A1A;
+  --surface-color: #F4E4D8;
+  --text-main: #F4E4D8;
+  --text-on-bg: #F4E4D8;
+  --border-color: #2C1A1A;
+  --shadow-color: #000000;
+
+  /* Accents */
+  --accent-primary: #FF5E00;
+  --accent-secondary: #4A6741;
+  --accent-tertiary: #D4AF37;
+
+  --text-on-surface: #2C1A1A;
+  /* Dark text on Light Surface (Beige) */
+}
+
+body {
+  color: var(--text-main);
+  background-color: var(--bg-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+@layer utilities {
+  .nb-card {
+    @apply bg-[var(--surface-color)] text-[var(--text-on-surface)] border-[3px] border-[var(--border-color)] shadow-[4px_4px_0px_0px_var(--shadow-color)] rounded-xl p-6;
+  }
+
+  .nb-btn {
+    @apply bg-[var(--surface-color)] text-[var(--text-on-surface)] border-[3px] border-[var(--border-color)] shadow-[4px_4px_0px_0px_var(--shadow-color)] rounded-lg px-6 py-2 uppercase tracking-wide font-bold transition-all duration-150 active:translate-x-[4px] active:translate-y-[4px] active:shadow-none hover:brightness-105;
+  }
+
+  .nb-input {
+    @apply bg-[var(--surface-color)] text-[var(--text-on-surface)] border-[3px] border-[var(--border-color)] shadow-none rounded-lg px-4 py-2 focus:outline-none focus:translate-x-[2px] focus:translate-y-[2px] focus:shadow-[2px_2px_0px_0px_var(--shadow-color)];
+  }
+
+  .text-shadow-hard {
+    text-shadow: 2px 2px 0px var(--shadow-color);
+  }
+}

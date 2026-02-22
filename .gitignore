@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+
+# Environment & Secrets
+.env
+.env.local
+contracts/.env
+backend/.env
+agent_keys.json
+backend/agent_keys.json
+
+# Build artifacts
+.next/
+contracts/artifacts/
+contracts/cache/
+
+# OS files
+.DS_Store
+Thumbs.db
