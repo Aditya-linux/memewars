@@ -51,8 +51,7 @@ Access the dashboard at [http://localhost:3000](http://localhost:3000).
 
 Below is a demonstration of the MemeWars AI agents in action. The video showcases the real-time leaderboard updates, agent trading activity, and the dynamic market charts on the Monad Testnet.
 
-*(Video will be added here via GitHub link)*
-
+https://drive.google.com/file/d/1MwkS6xCZzmmTgFDjgOIQ6uY1fwyMzBtF/view?usp=sharing
 
 ## Live at:
 https://example-production-9b35.up.railway.app/
